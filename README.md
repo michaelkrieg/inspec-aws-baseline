@@ -17,7 +17,7 @@
 
 # InSpec AWS Baseline Profile
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/centriascolocation/inspec-aws-baseline)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/michaelkrieg/inspec-aws-baseline)
 
 This profile covers some parts of the "CIS Amazon Web Services Foundations Benchmark (v1.2.0)".
 
@@ -63,7 +63,7 @@ You can easily use this InSpec profile from Github:
   ## the "-n" instructs aws-vault not to use AWS STS session tokens:
   aws-vault exec -n <YOURNAMEDPROFILEHERE> -- inspec exec \
     -t aws:// --show-progress \
-    https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz
+    https://github.com/michaelkrieg/inspec-aws-baseline/archive/master.tar.gz
 
 ```
 
@@ -74,7 +74,7 @@ Call InSpec with AWS region + your local configured Profile:
 ```
 
   inspec exec -t aws://eu-central-1/my-named-profile --show-progress \
-    https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz
+    https://github.com/michaelkrieg/inspec-aws-baseline/archive/master.tar.gz
   
 ```
 
@@ -96,7 +96,7 @@ You can enable it by providing variables given as an [InSpec Input File](https:/
 ```
 
   aws-vault exec -n <YOURNAMEDPROFILEHERE> -- inspec exec \
-    https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz \
+    https://github.com/michaelkrieg/inspec-aws-baseline/archive/master.tar.gz \
     -t aws:// --show-progress \
     --input-file enable-aws-organizations-checks.yml
 
@@ -105,7 +105,7 @@ You can enable it by providing variables given as an [InSpec Input File](https:/
 ## Local execution of tests with Docker
 
 ```
-  git clone https://github.com/centriascolocation/inspec-aws-baseline.git
+  git clone https://github.com/michaelkrieg/inspec-aws-baseline.git
   
   make build-docker-images
   aws-vault exec -n <YOURNAMEDPROFILEHERE> -- make test

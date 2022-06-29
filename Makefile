@@ -2,7 +2,7 @@ SHELL := /bin/bash
 
 # set the default region:
 AWS_REGION ?= eu-central-1
-AWS_PROFILE ?= centrias
+AWS_PROFILE ?= default
 
 INSPEC_VERSION = 4.36.4
 INSPEC_OPTIONS = --log-level=error --show-progress

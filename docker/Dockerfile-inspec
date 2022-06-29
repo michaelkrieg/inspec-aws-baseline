@@ -3,7 +3,7 @@ FROM ruby:2-alpine
 ARG GEM_SOURCE=https://rubygems.org
 ARG INSPEC_VERSION
 
-LABEL maintainer="Michael Krieg <michael@centrias.de>"
+LABEL maintainer="Michael Krieg <mk@red-tag.de>"
 LABEL com.chef.inspec.version="4.36.4"
 
 ENV VERSION ${INSPEC_VERSION}

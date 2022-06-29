@@ -1,8 +1,8 @@
 name: inspec-aws-baseline
-title: Centrias Colocation base profile for AWS accounts
-maintainer: support@centrias.net
-copyright: Centrias Colocation GmbH
-copyright_email: support@centrias.net
+title: Base profile for AWS accounts
+maintainer: mk@red-tag.de
+copyright: Michael Krieg
+copyright_email: mk@red-tag.de
 license: Apache-2.0
 summary: InSpec Baseline Profile for AWS account setup verification
 version: 1.4.2
